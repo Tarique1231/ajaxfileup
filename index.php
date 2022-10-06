@@ -15,26 +15,3 @@
     </div>
 </form>
 <h1>hhdhfh</h1>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-$("#submit_form").on('submit',(function(e) {
-e.preventDefault();
-$.ajax({
-url:"upload.php",
-type: "POST",
-data:new FormData(this),
-processData:false,
-contentType: false,
-success: function(data){
-   console.log(data);
-},
-error: function(){
-console.log("Internal Server error 404");
-}
-});
-
-}));
-});
-</script>
